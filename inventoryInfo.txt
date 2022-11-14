@@ -1,0 +1,6 @@
+OLED TV 40 25  	 Aisle: 1 	 Shelf: 1
+NA COMPUTER 20 23  	 Aisle: 2 	 Shelf: 2
+LCD TV 60 34  	 Aisle: 3 	 Shelf: 3
+NA COMPUTER 25 1  	 Aisle: 4 	 Shelf: 4
+LCD TV 50 349  	 Aisle: 5 	 Shelf: 5
+OLED TV 60 2  	 Aisle: 6 	 Shelf: 6

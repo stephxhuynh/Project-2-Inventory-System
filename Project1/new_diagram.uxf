@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.0.0">
+  <zoom_level>8</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>64</x>
+      <y>240</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>TV
+Sub Class
+--
+-Type: String
+--
++getType(): String
++getScreenSize(): int
++toString(): category,
+type, quantity,
+screenSize
+--
+Relationships
+Tv is an item
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>144</x>
+      <y>176</y>
+      <w>240</w>
+      <h>80</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>280.0;10.0;10.0;80.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>384</x>
+      <y>440</y>
+      <w>168</w>
+      <h>128</h>
+    </coordinates>
+    <panel_attributes>Desktop
+--
+-graphics: String
+--
++getGraphics(): String
++toString(): category,
+quantity, graphics,
+memory, screenSize
+--
+Relationship
+Desktop is a computer
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>848</x>
+      <y>192</y>
+      <w>184</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Chargeable
+&lt;&lt;interface&gt;&gt;
+--
++getBatteryCharge(): int
+--
+Relationship
+Laptop is chargeable
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>760</x>
+      <y>392</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Laptop
+--
+-batteryLife: int
+--
++getBatteryCharge(): int
++toString(): category,
+batteryLife,
+quantity, screenSize, memory
+--
+Relationship
+Laptop is a computer
+Laptop is Chargeable</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>672</x>
+      <y>336</y>
+      <w>104</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;100.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>192</y>
+      <w>104</w>
+      <h>64</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;10.0;110.0;60.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>512</x>
+      <y>384</y>
+      <w>32</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>20.0;10.0;10.0;70.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>864</x>
+      <y>336</y>
+      <w>56</w>
+      <h>72</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>10.0;70.0;50.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>368</x>
+      <y>32</y>
+      <w>216</w>
+      <h>168</h>
+    </coordinates>
+    <panel_attributes>Item
+Abstract Super Class
+--
+-quantity: int
+-category: String
+-ScreenSize: int
+-Location location
+--
++getQuantity(): int
++setQuantity(int newQuantity): void
++getCategory(): String
+abstract getScreenSize(): int
++toString
++getLocation(): Location
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>512</x>
+      <y>240</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Computer
+Sub Class
+--
+-Memory: int
+--
++getMemory(): int
++getScreenSize(): int
++toString(): category,
+quantity, screenSize,
+memory
+--
+Relationships
+Computer is an item
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>136</x>
+      <y>440</y>
+      <w>168</w>
+      <h>96</h>
+    </coordinates>
+    <panel_attributes>GraphicType
+&lt;&lt;interface&gt;
+--
++getGraphics(): String
+--
+Relationship
+Desktop has a graphics card
+
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>296</x>
+      <y>496</y>
+      <w>104</w>
+      <h>24</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
+    <additional_attributes>110.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>680</x>
+      <y>32</y>
+      <w>168</w>
+      <h>152</h>
+    </coordinates>
+    <panel_attributes>Location
+--
+- shelf: int
+- Aisle: int
+--
++Location(int shelf, int aisle)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>576</x>
+      <y>96</y>
+      <w>120</w>
+      <h>32</h>
+    </coordinates>
+    <panel_attributes>lt=&lt;&lt;&lt;&lt;-</panel_attributes>
+    <additional_attributes>130.0;10.0;10.0;20.0</additional_attributes>
+  </element>
+</diagram>
